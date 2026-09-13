@@ -26,19 +26,15 @@ public class AiMatchResult {
     public void setMatched(boolean matched) {
         this.matched = matched;
     }
-
     public double getConfidence() {
         return confidence;
     }
-
     public void setConfidence(double confidence) {
         this.confidence = confidence;
     }
-
     public String getReason() {
         return reason;
     }
-
     public void setReason(String reason) {
         this.reason = reason;
     }

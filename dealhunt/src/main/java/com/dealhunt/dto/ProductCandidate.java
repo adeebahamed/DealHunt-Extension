@@ -188,11 +188,9 @@ public class ProductCandidate {
     public void setAiConfidence(Double aiConfidence) {
         this.aiConfidence = aiConfidence;
     }
-
     public String getAiReason() {
         return aiReason;
     }
-
     public void setAiReason(String aiReason) {
         this.aiReason = aiReason;
     }
