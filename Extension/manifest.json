@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "DealHunt",
+  "version": "1.0.0",
+  "description": "Find and compare the best deals for products across marketplaces.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:8080/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "DealHunt"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
